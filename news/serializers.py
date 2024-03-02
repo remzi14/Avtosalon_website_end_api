@@ -12,6 +12,6 @@
 #
 # class AvtoApiSerializer(ModelSerializer):
 #     class Meta:
-#         model=NewAvto
+#         model=Avto
 #         fields="__all__"
 #

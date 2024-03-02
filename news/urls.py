@@ -1,20 +1,11 @@
+from .views import home,aloqa
+from rest_framework.routers import SimpleRouter
 from django.urls import path
-from .views import home,single,aloqa
 
+router=SimpleRouter()
+# router.register("api/avtolist",AvtoListView,basename='new_mashinalar')
+router.register("",home,basename='saxifa')
+router.register("alo",aloqa,basename='contact')
 
-
-
-urlpatterns=[
-    # path("avtolist", AvtoListView.as_view()),
-    path('',home,name='saxifa'),
-    path('aloqa/',aloqa,name='alo'),
-    path('single/<slug:slug>/', single, name='page'),
-]
-
-
-
-
-
-
-
+urlpatterns=router.urls
 

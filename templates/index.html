@@ -124,7 +124,7 @@
 								<div class="row">
 									<div class="col-md-7 col-sm-12">
 										<div class="new-cars-img">
-											<img src="{{ lates_new.image.url }}" alt="img"/>
+											<img src="{{ lates_new.image.url  }}" alt="img"/>
 										</div><!--/.new-cars-img-->
 									</div>
 									<div class="col-md-5 col-sm-12">
@@ -149,12 +149,14 @@
 										<div class="new-cars-img">
 											<img src="{{ new.image.url }}" alt="img"/>
 										</div><!--/.new-cars-img-->
-									</div>
-									<div class="col-md-5 col-sm-12">
-										<div class="new-cars-txt">
 											<a class="tn-date" href=""><i class="far fa-clock"></i>{{ new.title }}</a>
 											<a class="tn-date" href=""><i class="far fa-clock"></i>{{ new.data }}</a>
 											 <a class="tn-title" href="">{{ new.price }}</a>
+									</div>
+										{% endif %}
+										{% endfor %}
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
 											<button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
 												view details
 											</button>
@@ -163,8 +165,7 @@
 								</div><!--/.row-->
 							</div><!--/.single-new-cars-item-->
 						</div><!--/.new-cars-item-->
-						{% endif %}
-						{% endfor %}
+
 
 
 
@@ -266,34 +267,34 @@
 					<div class="owl-carousel owl-theme brand-item">
 						<div class="item">
 							<a href="#">
-								<img src="{% static 'images/brand/br1.png' 5]" alt="brand-image" />
+								<img src="{% static 'image/br1.png' 5]" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 						<div class="item">
 							<a href="#">
-								<img src="{% static 'images/brand/br2.png' %}" alt="brand-image" />
+								<img src="{% static 'image/br2.png' %}" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 						<div class="item">
 							<a href="#">
-								<img src="{% static 'images/brand/br3.png' %}" alt="brand-image" />
+								<img src="{% static 'image/br3.png' %}" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 						<div class="item">
 							<a href="#">
-								<img src="{% static 'images/brand/br4.png' %}" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-
-						<div class="item">
-							<a href="#">
-								<img src="{% static 'images/brand/br5.png' %}" alt="brand-image" />
+								<img src="{% static 'image/br4.png' %}" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 
 						<div class="item">
 							<a href="#">
-								<img src="{% static 'images/brand/br6.png' %}" alt="brand-image" />
+								<img src="{% static 'image/br5.png' %}" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'image/br6.png' %}" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 					</div><!--/.owl-carousel-->

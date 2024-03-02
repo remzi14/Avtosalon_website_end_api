@@ -5,8 +5,8 @@ from .models import Avto
 # from .serializers import AvtoApiSerializer
 
 #
-# class AvtoListView(ListAPIView):
-#     queryset = NewAvto.objects.all()
+# class AvtoListView(ViewSet):
+#     queryset = Avto.objects.all()
 #     serializer_class = AvtoApiSerializer
 
 
@@ -33,21 +33,6 @@ def home(request):
 
 
 
-
-
-
-
-
-def single(request,slug):
-    news=get_object_or_404( Avto,slug=slug)
-    context={
-        "news":news
-    }
-    return render(request,'single-page.html',context)
-
-
-
 def aloqa(request):
     return render(request,'contact.html')
-
 
